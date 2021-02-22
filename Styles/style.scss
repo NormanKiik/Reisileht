@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background-color: transparent;
+}
+#header .navbar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    
+    h2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        font-size: x-large;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        color: whitesmoke;
+    }
+    .lingid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        :hover {
+            text-decoration: underline whitesmoke;
+        }
+
+    }
+    li a {
+        text-decoration: none;
+        padding: 10px;
+        color: whitesmoke;
+        z-index: 2
+    }
+    .ikoonid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        margin: 0px 40px;
+        padding-left: 700px;
+        :hover {          
+            transform: rotate(180deg);
+            transition-duration: 0.8s;
+        }
+    }
+    .ikoonid a {
+        color: whitesmoke;
+        padding: 8px;
+        
+    }
+}
+body {
+    background-image: url(/Styles/Gallery/piqsels.com-id-stmxw.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-color: rgba(51, 51, 51, 0.548)
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+
+    }
+    h1, h3 {
+        justify-content: center;
+        border: 1px solid ;
+        border-radius: 10px;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+        color: rgba(212, 211, 211, 0.74);
+        font-weight: normal;
+    }
+    button {
+        height: 35px;
+        width: 80px;
+        border:rgba(212, 211, 211, 0.74) 1px solid;
+        border-radius: 10px;
+        margin-top: 15px;
+        background-color: transparent;
+
+        :hover {
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: rgba(35, 66, 105, 0.61);
+            transition: 2s;
+        }
+
+        a {
+            font-size: 1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 400;
+            color: rgba(212, 211, 211, 0.74);
+        }
+    }
+}
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+    iframe {
+        border-style: none;
+        background-color: black;
+        background-blend-mode: overlay;
+        opacity: 80%;
+        box-shadow: 10px 10px 40px 10px black;
+        z-index: 1;
+    }
+}
+.gallery {
+    width: 100%;
+    margin-top: 150px;
+    padding: 30px;
+
+    picture {
+        display: block;
+        position: relative;
+
+        img {
+            height: 220px;
+            width: 400px;
+            box-shadow: 5px 5px 40px 10px black;
+            opacity: 90%;
+            transition: 1s ease;
+            backface-visibility: hidden;
+            margin: 10px;
+        }
+    }
+}

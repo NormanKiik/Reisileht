@@ -1,0 +1,242 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: transparent;
+}
+
+#header .navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+#header .navbar h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: x-large;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: whitesmoke;
+}
+
+#header .navbar .lingid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+#header .navbar .lingid :hover {
+  -webkit-text-decoration: underline whitesmoke;
+          text-decoration: underline whitesmoke;
+}
+
+#header .navbar li a {
+  text-decoration: none;
+  padding: 10px;
+  color: whitesmoke;
+  z-index: 2;
+}
+
+#header .navbar .ikoonid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+  margin: 0px 40px;
+  padding-left: 700px;
+}
+
+#header .navbar .ikoonid :hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+#header .navbar .ikoonid a {
+  color: whitesmoke;
+  padding: 8px;
+}
+
+body {
+  background-image: url(/Styles/Gallery/piqsels.com-id-stmxw.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-color: rgba(51, 51, 51, 0.548);
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+}
+
+#main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+#main h1, #main h3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: 5px;
+  color: rgba(212, 211, 211, 0.74);
+  font-weight: normal;
+}
+
+#main button {
+  height: 35px;
+  width: 80px;
+  border: rgba(212, 211, 211, 0.74) 1px solid;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: transparent;
+}
+
+#main button :hover {
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: rgba(35, 66, 105, 0.61);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#main button a {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  color: rgba(212, 211, 211, 0.74);
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+}
+
+.media iframe {
+  border-style: none;
+  background-color: black;
+  background-blend-mode: overlay;
+  opacity: 80%;
+  -webkit-box-shadow: 10px 10px 40px 10px black;
+          box-shadow: 10px 10px 40px 10px black;
+  z-index: 1;
+}
+
+.gallery {
+  width: 100%;
+  margin-top: 150px;
+  padding: 30px;
+}
+
+.gallery picture {
+  display: block;
+  position: relative;
+}
+
+.gallery picture img {
+  height: 220px;
+  width: 400px;
+  -webkit-box-shadow: 5px 5px 40px 10px black;
+          box-shadow: 5px 5px 40px 10px black;
+  opacity: 90%;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
